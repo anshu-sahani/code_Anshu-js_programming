@@ -17,3 +17,4 @@
 console.log(typeof undefined) // output => undefind
 
 console.log(typeof null) // output => Object
+
