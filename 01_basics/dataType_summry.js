@@ -8,9 +8,9 @@
 const name = "anshu"; // string
 let score = 566; // number
 let isLoggedIn = true // boolean
-let NewTemp = null; // Null
-let userEmail; // undefined
-let id = Symbol('56');
+let NewTemp = null; // Null  => dataype is Object
+let userEmail; // undefined =>  dataType is Undefind
+let id = Symbol('56'); 
 let anotherId = Symbol('56'); //  symbol
 
 console.log(id === anotherId);
