@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | lecture three in javascript</title>
+</head>
+<body style=" background-color: black; color: wheat;">
+    
+</body>
+    <script>
+        const createDiv = document.createElement('div');
+        createDiv.className = 'header';
+        createDiv.id = 'title';
+        createDiv.setAttribute("title", 'divTag');
+        createDiv.style.color = 'orange';
+        createDiv.style.fontSize = '2rem';
+       // createDiv.innerText = 'Hello World Welcome to Chai aur code';
+    const textNode = document.createTextNode('Hello Worlds | Welcome to chai aur code');
+    createDiv.appendChild(textNode);
+        document.body.appendChild(createDiv);
+
+        console.log(createDiv);
+        
+    </script>
+</html>

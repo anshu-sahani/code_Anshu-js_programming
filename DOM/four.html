@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code </title>
+</head>
+<body style="background-color: black;color: white;">
+    <div class="parant">
+        <ul class="list">
+            <li class="list_item">JavaScript</li>
+            <li class="list_item">MongoDB</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // add list items
+    function AddLiList(langName) {
+        const list = document.createElement('li');
+        list.innerHTML = langName;
+        document.querySelector('.list').appendChild(list);
+    }
+    AddLiList('typeScript');
+
+    // Optimize Oproch
+    const listAdd = (langName) => {
+        const list = document.createElement('li');
+        const textNode = document.createTextNode(langName);
+        list.appendChild(textNode);
+        document.querySelector('.list').appendChild(list);
+    }
+    listAdd('html cass');
+    listAdd('Next.js')
+
+  // Edit
+  const list = document.querySelector('li:nth-child(4)');
+//   list.innerHTML = 'SQL';
+const newLi = document.createElement('li');
+newLi.textContent = 'No SQL';
+list.replaceWith(newLi);
+
+// outerHtml
+const firstli = document.querySelector('li:first-child');
+firstli.outerHTML = '<li class="list-item" > JS Language</li>';
+
+// remove
+const lastLi = document.querySelector('li:last-Child');
+lastLi.remove(); 
+
+</script>
+</html>
